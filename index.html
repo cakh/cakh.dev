@@ -1,13 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to cakh.dev</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakh - Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .project {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+        video, iframe {
+            width: 100%;
+            height: 350px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+        }
     </style>
 </head>
 <body>
-    <h1>Hello, I’m Cakh!</h1>
-    <p>Welcome to my personal website.</p>
+    <header>
+        <h1>Hello, I'm Cakh!</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a software engineer passionate about creating impactful software solutions. My interests span robotics, automation, and software development.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python, C++, JavaScript, ROS2, Linux, Docker, Git, CI/CD</li>
+            <li>Robotics frameworks (ROS, MoveIt, Gazebo)</li>
+            <li>Web Development (HTML/CSS/JS)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>ROS2 & UR5 Robot Integration with LLM</h3>
+            <p>A natural language controlled robotic system leveraging ROS2, UR5e robot, and OpenAI's GPT models.</p>
+            <iframe src="https://www.youtube.com/embed/example" allowfullscreen></iframe>
+        </div>
+
+        <div class="project">
+            <h3>Visual Servoing for Robot Manipulation</h3>
+            <p>A robotic system that manipulates objects based on visual feedback from a MechMind camera.</p>
+            <iframe src="https://www.youtube.com/embed/example2" allowfullscreen></iframe>
+        </div>
+
+        <!-- Add more projects as needed -->
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <div class="social-icons">
+            <a href="https://github.com/yourusername"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourusername"><i class="fab fa-linkedin"></i></a>
+            <!-- Add more social icons as needed -->
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Cakh.dev - All rights reserved.
+    </footer>
 </body>
 </html>
